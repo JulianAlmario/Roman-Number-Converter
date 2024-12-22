@@ -17,7 +17,7 @@ body{
 
 h1{
     color:#f16835;
-    font-size:3rem;
+    font-size:3em;
 }
 
 section{
@@ -39,7 +39,7 @@ section{
 span{
     color:#f16835;
     font-weight: bold;
-    font-size:1.3rem;
+    font-size:1.3em;
 }
 
 input{
@@ -50,7 +50,7 @@ input{
 }
 
 button{
-    padding:0.5rem;
+    padding:1rem;
     background:#fff6c3;
     font-weight:bold;
     color:#f16835;
@@ -69,4 +69,55 @@ button:hover{
     display:flex;
     gap:1rem;
     border:none;
+}
+
+#output{
+    font-weight:normal;
+}
+
+@media (max-width: 700px) {
+    body{
+        padding:1rem;
+    }
+    h1{
+        font-size:1.4em;
+    }
+    span{
+        font-size:1em;
+    }
+    input{
+        padding:0.3rem;
+    }
+    button{
+        padding:0.3rem;
+    }
+
+    #div-result{
+        gap:0.5rem;
+    }
+}
+
+@media (min-width: 1500px) {
+     body{
+        font-size:2em;
+     }
+    h1{
+        font-size:4em;
+    }
+    section,span,div,input,button{
+        font-size:1.2em;
+    }
+
+    #div-input{
+        gap:2.5rem;
+    }
+
+    input{
+        padding:0.5rem;
+        border:2px;
+    }
+    button{
+        padding:0.5rem;
+        border:2px;
+    }
 }
