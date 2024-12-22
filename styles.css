@@ -20,7 +20,14 @@ h1{
     font-size:3rem;
 }
 
-div{
+section{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+
+#div-input{
     display:flex;
     flex-direction:column;
     background:#ffd09d;
@@ -58,3 +65,8 @@ button:hover{
     color:#fff6c3;
 }
 
+#div-result{
+    display:flex;
+    gap:1rem;
+    border:none;
+}

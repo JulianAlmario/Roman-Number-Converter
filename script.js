@@ -46,4 +46,25 @@ return newnumber;
 
 }
 
-console.log(converter(3999));
+
+
+document.addEventListener("DOMContentLoaded", () => {
+const inp=document.getElementById("number");
+const btn=document.getElementById("convert-btn");
+const result=document.getElementById("output");
+
+btn.addEventListener("click",()=>{
+if(inp.value===""){
+    result.innerText="Please enter a valid number";
+}else if(parseInt(inp.value)<=-1){
+    result.innerText="Please enter a number greater than or equal to 1";
+}else if(parseInt(inp.value)>=4000){
+    result.innerText="Please enter a number less than or equal to 3999";
+}else{
+    result.innerText=converter(parseInt(inp.value));
+}
+
+inp.value="";
+})
+
+})
